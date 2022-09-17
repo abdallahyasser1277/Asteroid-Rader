@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">مستكشف الكويكبات</string>
+    <string name="next_week_asteroids">عرض كويكبات الأسبوع</string>
+    <string name="today_asteroids">عرض كويكبات اليوم</string>
+    <string name="saved_asteroids">عرض الكويكبات المحفوظة</string>
+    <string name="close_approach_data_title">"تاريخ الاقتراب "</string>
+    <string name="absolute_magnitude_title">الحجم التقريبي</string>
+    <string name="estimated_diameter_title">القطر التقريبي</string>
+    <string name="relative_velocity_title">السرعة النسبية</string>
+    <string name="distance_from_earth_title">الابتعاد عن الارض</string>
+    <string name="astronomical_unit_format"> %s وحدة فلكية</string>
+    <string name="km_unit_format"> %s كيلومتر</string>
+    <string name="km_s_unit_format"> %s كيلومتر\\ساعة</string>
+    <string name="image_of_the_day">صورة اليوم</string>
+    <string name="astronomica_unit_explanation">الوحدة الفلكية (au) هي وحدة طول ، تقريبًا المسافة من الأرض إلى الشمس وتساوي حوالي 150 مليون كيلومتر (93 مليون ميل)</string>
+    <string name="astronomical_unit_explanation_button">تعريف الوحدة الفلكية</string>
+    <string name="potentially_hazardous_asteroid_image">صورة كويكب يحتمل أن يكون خطرة</string>
+    <string name="not_hazardous_asteroid_image">صورة كويكب ليس خطرة</string>
+    <string name="this_is_nasa_s_picture_of_day_showing_nothing_yet">هذه صورة ناسا لليوم ولا تظهر أي شيء بعد</string>
+    <string name="nasa_picture_of_day_content_description_format">صورة ناسا لليوم</string>
+    <string name="asteroid_code_name">اسم الكويكب</string>
+    <string name="asteroid_close_approach_date">تاريخ اقتراب الكويكب</string>
+    <string name="this_is_s_double_click_top_open">هذا هو  %s,  اضغط مرتين للعرض</string>
+    <string name="this_is_a_potentially_hazardous_asteroid">هذا كويكب يحتمل أن يكون خطيرًا</string>
+    <string name="this_is_not_a_potentially_hazardous_asteroid">هذا كويكب غير محتمل أن يكون خطيرًا</string>
+    <string name="ispotentiallyhazardous">isPotentiallyHazardous</string>
+    <string name="double_click_for_help">انقر نقرًا مزدوجًا للحصول على المساعدة</string>
+</resources>

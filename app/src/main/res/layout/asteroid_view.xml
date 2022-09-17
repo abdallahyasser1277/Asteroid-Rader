@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="clickListener"
+            type="com.udacity.asteroidradar.main.ItemClkListener" />
+
+        <variable
+            name="asteroid"
+            type="com.udacity.asteroidradar.model.Asteroid" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:onClick="@{() -> clickListener.onClick(asteroid)}"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp">
+
+        <TextView
+            android:id="@+id/codeName"
+            style="@style/TextAppearance.Title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@string/asteroid_code_name"
+            android:gravity="start"
+            android:text="@{asteroid.codename}"
+            android:textAlignment="viewStart"
+            app:layout_constraintBottom_toTopOf="@+id/closeApproachDate"
+            app:layout_constraintEnd_toStartOf="@+id/imageView2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/closeApproachDate"
+            style="@style/TextAppearance.Subtitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="@string/asteroid_close_approach_date"
+            android:text="@{asteroid.closeApproachDate}"
+            android:textAlignment="viewStart"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/codeName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/codeName" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="@string/ispotentiallyhazardous"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/codeName"
+            app:layout_constraintTop_toTopOf="parent"
+            app:statusIcon="@{asteroid.isPotentiallyHazardous}" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
